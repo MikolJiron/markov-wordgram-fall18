@@ -1,7 +1,7 @@
 /**
  * WordGram objects represent a k-gram of strings/words.
  * 
- * @author YOUR-NAME
+ * @author MICHAEL JIRON
  *
  */
 
@@ -20,6 +20,12 @@ public class WordGram {
 	public WordGram(String[] source, int start, int size) {
 		myWords = new String[size];
 		// TODO: initialize myWords and ...
+
+		for(int k = 0; k < size; k++){
+			myWords[k] = source[start + k];
+		}
+		myToString = null;
+		myHash = 0;
 	}
 
 	/**
